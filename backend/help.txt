@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////
+// Métodos HTTP: GET, POST, PUT, DELETE;
+//
+// Tipos de Parâmetros:
+// 
+// Query Params: Em geral utilizado apenas em GET.
+//      (Filtros, ordenação, paginação, ... )  
+//      URL pelo Cliente: GET => http://localhost:3333/users?search=Kallico
+//      Para acessar na api: req.query
+//      i.e:
+//          console.log(req.query);
+//      -- returns
+//          { search: 'Kallico' }
+// 
+// 
+// Route params: Em geral utilizado em PUT e DELETE;
+//      (Identificar um recurso para Editar ou deletar)
+//      URL pelo Cliente: PUT => http://localhost:3333/users/1
+//      Para acessar na api: req.params
+//      i.e:
+//          app.put('/users/:id', (req, res)) {
+//              console.log(req.params);
+//          };
+//      -- returns
+//          { id: '1' };
+//
+// Body: Em geral utilizado em POST e PUT;
+//      ()
+//      URL pelo Cliente: não altera;
+//      O Corpo da requisição deve contar um JSON
+//      i.e:
+//          { 
+//              "name" : "Kallico",
+//              "email" : "froiskallico@gmail.com" 
+//          }
+//      Para acessar na api: req.body
+//      i.e:
+//          app.post('/users', (req, res) => {
+//              console.log(req.body);
+//          });
+//      -- returns
+//          { name : "Kallico", email : "froiskallico@gmail.com" }
+//
+//      ******* PRECISA USAR app.use(express.json()); *******
+////////////////////////////////////////////////////////////////////////////////
