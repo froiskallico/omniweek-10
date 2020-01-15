@@ -2,6 +2,7 @@ import React from 'react';
 
 import './global.css';
 import './App.css';
+import './Sidebar.css';
 
 // Componente: Bloco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicação;
 // Propriedade: Informações que um componente PAI passa para um componente FILHO. i.e: <Header title="Titulo 1" />. Usa-se a propriedade props.title dentro do componente Header.js;
