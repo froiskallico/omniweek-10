@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const PointSchema = require('./utils/PointSchema');
+const PointSchema = require('./utils/pointSchema');
 
 // index: Lista recursos;
 // show: Lista um unico recurso;
